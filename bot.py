@@ -3,8 +3,8 @@ import telebot
 import time
 from deep_translator import GoogleTranslator
 
-TOKEN = "TOKEN_BOT"
-CHAT_ID = "CHAT_ID"
+TOKEN = "8681834599:AAFnYKxIwmgTIJWXYPtPuIsp1ibF0pqfndI"
+CHAT_ID = "1208342332"
 
 UID_LIST = [
 "3493096635463293",
