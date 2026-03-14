@@ -35,7 +35,10 @@ def check_bilibili(uid):
 if res.status_code != 200:
     return
 
-data = res.json()
+try:
+    data = res.json()
+except:
+    return
 
     video = data["data"]["list"]["vlist"][0]
 
