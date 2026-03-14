@@ -30,7 +30,12 @@ def get_avatar(uid):
 def check_bilibili(uid):
 
     url = f"https://api.bilibili.com/x/space/arc/search?mid={uid}&pn=1&ps=1"
-    data = requests.get(url).json()
+    res = requests.get(url)
+
+if res.status_code != 200:
+    return
+
+data = res.json()
 
     video = data["data"]["list"]["vlist"][0]
 
